@@ -30,6 +30,7 @@ namespace TechJobsMVC.Controllers
 
         public IActionResult Index()
         {
+            //returns all these values to html
             ViewBag.columns = ColumnChoices;
             ViewBag.tableChoices = TableChoices;
             ViewBag.employers = JobData.GetAllEmployers();
